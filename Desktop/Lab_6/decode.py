@@ -6,6 +6,6 @@ def decode(password):
     for i in password:
         # convert to integer & shift down by 3
         num = (int(i) - 3) % 10
-        password += str(num)
+        decoded += str(num)
 
-    return password
+    return decoded
